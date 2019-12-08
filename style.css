@@ -1,10 +1,15 @@
 #secondes {
-
+position: absolute;
+  height: 150px;
+  transform-origin: bottom;
+  border: solid black 1px;
+  bottom: 50%;
+  left: 50%;
 }
 
 
 #cadran{
-  position: center;
+  position: absolute;
   background: url("horloge.png") no-repeat;
 height: 567px;
   width: 567px;
@@ -17,17 +22,21 @@ position: relative;
 }
 
 #minute {
-
+  position: absolute;
+  height: 150px;
+  transform-origin: bottom;
+  border: solid black 1px;
+  bottom: 50%;
+  left: 50%;
 }
 
 #heure {
+  position: absolute;
+  height: 150px;
+  transform-origin: bottom;
+  border: solid black 1px;
+  bottom: 50%;
+  left: 50%;
 
 }
 
-#cercle{
-  background:#bfd70e;
-  border-radius:50%;
-  width:160px;
-  height:160px;
-  border:2px solid #679403;
-}
