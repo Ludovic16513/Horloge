@@ -1,0 +1,33 @@
+#secondes {
+
+}
+
+
+#cadran{
+  position: center;
+  background: url("horloge.png") no-repeat;
+height: 567px;
+  width: 567px;
+}
+
+#global{
+position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#minute {
+
+}
+
+#heure {
+
+}
+
+#cercle{
+  background:#bfd70e;
+  border-radius:50%;
+  width:160px;
+  height:160px;
+  border:2px solid #679403;
+}
