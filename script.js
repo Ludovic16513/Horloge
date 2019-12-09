@@ -1,32 +1,33 @@
+// Récuperation des minutes et des heures réelles
 var now = new Date;
-var seconde = now.getSeconds();
 var minute = now.getMinutes();
 var heure = now.getHours();
 
-var aiguilleSeconde = document.getElementById("secondes");
+//Récupération des <div> aiguilles
 var aiguilleMinute = document.getElementById("minute");
 var aiguilleHeure = document.getElementById("heure");
 
-aiguilleSeconde.style.transform = "rotate(" + (seconde*6) + "deg)";
+//Initialisation des aiguilles sur l'heure actuelle au chargement de la page
 aiguilleMinute.style.transform = "rotate(" + (minute*6) +"deg)";
 aiguilleHeure.style.transform = "rotate(" + (heure*30) +"deg)";
 
-
+//Fonction pour la rotation des aiguilles
 function horloge(){
 
+    //Reinitialisation des var temps toutes les secondes.
     setTimeout(horloge,1000);
-// temps
     var now = new Date;
     var seconde = now.getSeconds();
     var minute = now.getMinutes();
     var heure = now.getHours();
-//ID
+
+    //Re-selection des <div> pour la Fonction horloge
     var aiguilleSeconde = document.getElementById("secondes");
     var aiguilleMinute = document.getElementById("minute");
     var aiguilleHeure = document.getElementById("heure");
 
 
-    //Rotation
+    //Selection des <div> aiguille + rotation avec conversion des secondes en 'deg"
     aiguilleSeconde.style.transform = "rotate(" + (seconde*6) + "deg)";
 
     if (seconde === 0){
@@ -38,6 +39,8 @@ function horloge(){
     }
 
     console.log(seconde);
+    console.log(heure);
+    console.log(minute)
 }
 
 horloge();
